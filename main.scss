@@ -1,0 +1,60 @@
+body {
+	background: lightblue;
+}
+
+#channel-popup-form {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	.channel-form {
+		position: relative;
+		max-width: 800px;
+		max-height: calc(100% - 60px);
+		/*max-height: 100%;*/
+		top: 47%;
+		transform: translate(0px, -50%);
+		padding: 20px;
+		background: white;
+		margin: 20px auto;
+		overflow-y: auto;
+		border-radius: 6px;
+
+		label, select {
+			display: block;
+			
+			margin: 10px 0px;
+
+		}
+		label {
+			
+		}
+
+		input, textarea {
+			display: block;
+			background: none;
+			border: thin solid grey;
+			margin: 10px 0px;
+			width: 100%;
+		}
+		textarea {
+			font-size: 1em;
+			padding: 14px 21px 12px;
+		}
+		p.form-title {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+	.dark-transparency {
+		background-color: rgba(0,0,0,.6);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+
+	}
+}

@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>channel forms</title>
+	<link rel="stylesheet" id="fuzzco_main-css" href="https://static.revelsystems.com/wp-content/themes/reveldown/style.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="/css/main.css">	
+</head>
+<body>
+	
+	<div id="channel-popup-form">
+        <div class="dark-transparency"></div>
+<form class="channel-form" method="post" autocomplete="" validate>
+	<p class="form-title">Please complete <strong>all</strong> fields</p>
+              <input type="text" name="company" placeholder="Company Name*" required="">
+              <input type="text" name="Notes__c[website]" placeholder="Company Website*" required="">
+              <input type="text" name="first_name" placeholder="First Name*" required="">
+              <input type="text" name="last_name" placeholder="Last Name*" required="">
+              <input type="text" name="email" placeholder="Email*" required="">
+              <input type="text" name="phone" placeholder="Phone #*" required="">
+              <input type="text" name="Notes__c[city]" placeholder="City*" required="">
+              <input type="text" name="Notes__c[state]" placeholder="State*" required="">
+              <input type="text" name="Notes__c[country]" placeholder="Country*" required="">
+              <input type="text" name="Notes__c[number_of_employees]" placeholder="# of Sales Agents*" required="">
+              <input type="text" name="Notes__c[years_in_business]" placeholder="How Long Has Your Company Been Affiliated With POS?*" required="">
+              <label for="affiliated_with_tablet_pos">Affiliated with Tablet POS?</label>
+              <select name="affiliated_with_tablet_pos" id="affiliated_with_tablet_pos" placeholder='affilated'>
+              	<option value="Select One" default required>Select One</option>
+              	<option value="Yes">Yes</option>
+              	<option value="No">No</option>
+              </select>
+              <input type="text" name="Notes__c[other_pos_companies]" placeholder="List Other POS Partnerships (Past or Present)*" required="">
+              <textarea rows="6" type="text" name="Notes__c[products]" placeholder="Please list any other products or services you sell:*" required=""></textarea>
+              <input type="text" name="Notes__c[first_level_support]" placeholder="Do you provide first level technical support to the clients you service?*" required="">
+              <label for="first_level_support">Do you provide first level technical support to the clients you service?*</label>
+              <select name="first_level_support" id="first_level_support">
+              	<option value="Select One" default required>Select One</option>
+              	<option value="Yes">Yes</option>
+              	<option value="No">No</option>              	
+              </select>
+              <input type="number" placeholder="# of Support Agents">
+              <input type="hidden" name="encoding" value="UTF-8">
+              <input type="hidden" name="oid" value="00D50000000JLAm">
+              <input type="hidden" name="retURL" value="https://revelsystems.com/channel-sales-thank-you">
+              <input type="hidden" name="recordType" value="01250000000J6I1">
+              <input type="hidden" name="lead_source" value="Reseller">
+              <input type="hidden" name="Origination__c" value="Inbound">
+              <input type="hidden" name="Lead_Gen_Hand_Off_Date__c" value="Website">
+              <input type="hidden" name="Vertical__c" value="Other">
+              <input type="hidden" name="Contact__c" value="NULL">
+              <input type="hidden" name="Business_Segment__c" value="SMB">
+              <input type="hidden" name="Payment_Processor__c" value="Intuit">
+              <input type="hidden" name="Status" value="New">
+              <input type="hidden" name="owner" value="00G50000002zCxH">
+              <input id="notes" type="hidden" data-name="Notes__c" value="">
+              <input class="btn-basic" type="submit" value="Get Started">
+            </form>		
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="/js/main-min.js"></script>
+	<script src="//app-sj14.marketo.com/js/forms2/js/forms2.min.js"></script>
+<!-- <form id="mktoForm_2583"></form> -->
+<script>
+	MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2583, function(form){
+
+	});
+</script>
+	
+</body>
+</html>
