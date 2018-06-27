@@ -18,7 +18,7 @@ body {
     padding: 20px;
     background: white;
     margin: 20px auto;
-    overflow-y: auto;
+    overflow-y: auto !important;
     border-radius: 6px; }
     #channel-popup-form .channel-form label, #channel-popup-form .channel-form select {
       display: block;
@@ -42,5 +42,8 @@ body {
     bottom: 0;
     right: 0;
     left: 0; }
+  #channel-popup-form .error {
+    text-align: center;
+    color: red; }
 
 /*# sourceMappingURL=main.css.map */

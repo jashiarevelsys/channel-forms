@@ -10,7 +10,7 @@
 	
 	<div id="channel-popup-form">
        <div class="dark-transparency"></div>
-       <form class="channel-form" method="post" autocomplete="" validate>
+       <form id="channel-form" class="channel-form" method="post" autocomplete="" validate>
 	      <p class="form-title">Please complete <strong>all</strong> fields</p>
               <input type="text" name="Company" placeholder="Company Name*" required="">
               <input type="text" name="Website" placeholder="Company Website*" required="">
@@ -56,17 +56,16 @@
               <input type="hidden" name="Status" value="New">
               <input type="hidden" name="owner" value="00G50000002zCxH">
               <input id="notes" type="hidden" data-name="Notes__c" value="">
-              <input class="btn-basic" type="submit" value="Get Started">
+              <input id="channel-submit-button" class="btn-basic" type="submit" value="Get Started">
             </form>		
 	</div>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://static.revelsystems.com/wp-content/themes/reveldown/-/js/vendor/jquery.validate.js"></script>
 	<script src="/js/main-min.js"></script>
 	<script src="//app-sj14.marketo.com/js/forms2/js/forms2.min.js"></script>
-       <form id="mktoForm_2583"></form>
-<script>
-	MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2583, function(form){
+       <!-- <form id="mktoForm_2583"></form> -->
 
-	});
+<script>
 </script>
 	
 </body>

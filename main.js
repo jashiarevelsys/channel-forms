@@ -14,4 +14,13 @@ jQuery(document).ready(function($) {
 			$('#number_of_agents').hide();
 		}
 	});
+	$('#channel-form').validate();
+	$('#channel-submit-button').click(function(event) {
+		event.preventDefault();
+		if ( $('#channel-form').valid() ) {
+			MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2583, function(form){
+				
+			});
+		}
+	});
 });

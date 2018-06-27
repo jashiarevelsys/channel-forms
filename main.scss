@@ -20,7 +20,7 @@ body {
 		padding: 20px;
 		background: white;
 		margin: 20px auto;
-		overflow-y: auto;
+		overflow-y: auto !important;
 		border-radius: 6px;
 
 		label, select {
@@ -57,5 +57,9 @@ body {
 		right: 0;
 		left: 0;
 
+	}
+	.error {
+		text-align: center;
+		color: red;
 	}
 }
