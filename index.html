@@ -5,23 +5,27 @@
 	<link rel="stylesheet" id="fuzzco_main-css" href="https://static.revelsystems.com/wp-content/themes/reveldown/style.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/css/main.css">	
 </head>
-<body>
+<body> 
+       <a href="#" id="get-channel-button" class="button">Sign up</a>
 	
 	<div id="channel-popup-form">
-        <div class="dark-transparency"></div>
-<form class="channel-form" method="post" autocomplete="" validate>
-	<p class="form-title">Please complete <strong>all</strong> fields</p>
-              <input type="text" name="company" placeholder="Company Name*" required="">
-              <input type="text" name="Notes__c[website]" placeholder="Company Website*" required="">
-              <input type="text" name="first_name" placeholder="First Name*" required="">
-              <input type="text" name="last_name" placeholder="Last Name*" required="">
-              <input type="text" name="email" placeholder="Email*" required="">
-              <input type="text" name="phone" placeholder="Phone #*" required="">
-              <input type="text" name="Notes__c[city]" placeholder="City*" required="">
-              <input type="text" name="Notes__c[state]" placeholder="State*" required="">
-              <input type="text" name="Notes__c[country]" placeholder="Country*" required="">
-              <input type="text" name="Notes__c[number_of_employees]" placeholder="# of Sales Agents*" required="">
-              <input type="text" name="Notes__c[years_in_business]" placeholder="How Long Has Your Company Been Affiliated With POS?*" required="">
+       <div class="dark-transparency"></div>
+       <form class="channel-form" method="post" autocomplete="" validate>
+	      <p class="form-title">Please complete <strong>all</strong> fields</p>
+              <input type="text" name="Company" placeholder="Company Name*" required="">
+              <input type="text" name="Website" placeholder="Company Website*" required="">
+              <input type="text" name="FirstName" placeholder="First Name*" required="">
+              <input type="text" name="LastName" placeholder="Last Name*" required="">
+              <input type="text" name="Email" placeholder="Email*" required="">
+              <input type="text" name="Phone" placeholder="Phone #*" required="">
+              <input type="text" name="City" placeholder="City*" required="">
+              <label for="State">State:</label>
+              <select id="State" name="State" class="">
+                     <option value="">Select...</option><option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option>
+              </select>
+              <input type="text" name="Country" placeholder="Country*" required="">
+              <input type="number" name="Number_of_Employees__c" placeholder="# of Sales Agents*" required="">
+              <input type="text" name="How_long_has_your_business_been_around__c" placeholder="How Long Has Your Company Been Affiliated With POS?*" required="">
               <label for="affiliated_with_tablet_pos">Affiliated with Tablet POS?</label>
               <select name="affiliated_with_tablet_pos" id="affiliated_with_tablet_pos" placeholder='affilated'>
               	<option value="Select One" default required>Select One</option>
@@ -37,7 +41,7 @@
               	<option value="Yes">Yes</option>
               	<option value="No">No</option>              	
               </select>
-              <input type="number" placeholder="# of Support Agents">
+              <input type="number" id="number_of_agents" placeholder="# of Support Agents" style="display: none;" >
               <input type="hidden" name="encoding" value="UTF-8">
               <input type="hidden" name="oid" value="00D50000000JLAm">
               <input type="hidden" name="retURL" value="https://revelsystems.com/channel-sales-thank-you">
@@ -58,7 +62,7 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="/js/main-min.js"></script>
 	<script src="//app-sj14.marketo.com/js/forms2/js/forms2.min.js"></script>
-<!-- <form id="mktoForm_2583"></form> -->
+       <form id="mktoForm_2583"></form>
 <script>
 	MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2583, function(form){
 
