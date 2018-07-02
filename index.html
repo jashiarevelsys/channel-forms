@@ -20,31 +20,29 @@
               <input type="text" id="Phone" name="Phone" placeholder="Phone #*" required="">
               <input type="text" id="City" name="City" placeholder="City*" required="">
               <label for="State">State:</label>
-              <select id="State" name="State" class="">
+              <select id="State" name="State" class="" required=''>
                      <option value="">Select...</option><option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option>
               </select>
               <input type="text" id="Country" name="Country" placeholder="Country*" required="">
               <input type="number" id="Number_of_Employees__c" name="Number_of_Employees__c" placeholder="# of Sales Agents*" required="">
-              <input type="text" id="How_long_has_your_business_been_around__c" name="How_long_has_your_business_been_around__c" placeholder="How Long Has Your Company Been Affiliated With POS?*" required="">
+              <input type="text" id="Previous_POS_Experience__c" name="Previous_POS_Experience__c" placeholder="How Long Has Your Company Been Affiliated With POS?*" required="">
               <label for="affiliated_with_tablet_pos">Affiliated with Tablet POS?</label>
-              <select name="affiliated_with_tablet_pos" id="affiliated_with_tablet_pos" placeholder='affilated'>
+              <select name="affiliated_with_tablet_pos" id="affiliated_with_tablet_pos" placeholder='affilated' required="">
               	<option value="Select One" default required>Select One</option>
               	<option value="Yes">Yes</option>
               	<option value="No">No</option>
               </select>
-              <input type="text" id="Notes__c[other_pos_companies]" name="Notes__c[other_pos_companies]" placeholder="List Other POS Partnerships (Past or Present)*" required="">
-              <textarea rows="6" type="text" id="Notes__c[products]" name="Notes__c[products]" placeholder="Please list any other products or services you sell:*" required=""></textarea>
-              <input type="text" id="Notes__c[first_level_support]" name="Notes__c[first_level_support]" placeholder="Do you provide first level technical support to the clients you service?*" required="">
+              <input type="text" id="other_pos_companies" name="other_pos_companies" placeholder="List Other POS Partnerships (Past or Present)*" required="">
+              <textarea rows="6" type="text" id="products" name="products" placeholder="Please list any other products or services you sell:*" required=""></textarea>
+              <input type="text" id="first_level_support" name="first_level_support" placeholder="Do you provide first level technical support to the clients you service?*" required="">
               <label for="first_level_support">Do you provide first level technical support to the clients you service?*</label>
               <select name="first_level_support" id="first_level_support">
               	<option value="Select One" default required>Select One</option>
               	<option value="Yes">Yes</option>
               	<option value="No">No</option>              	
               </select>
-              <input type="number" name="number_of_agents" id="number_of_agents" placeholder="# of Support Agents" style="display: none;" >
+              <input type="number" name="number_of_agents" id="number_of_agents" placeholder="# of Support Agents*" style="display: none;" >
               <input type="hidden" name="encoding" value="UTF-8">
-              <input type="hidden" name="oid" value="00D50000000JLAm">
-              <input type="hidden" name="retURL" value="https://revelsystems.com/channel-sales-thank-you">
               <input type="hidden" name="recordType" value="01250000000J6I1">
               <input type="hidden" name="lead_source" value="Reseller">
               <input type="hidden" name="Origination__c" value="Inbound">
@@ -55,7 +53,6 @@
               <input type="hidden" name="Payment_Processor__c" value="Intuit">
               <input type="hidden" name="Status" value="New">
               <input type="hidden" name="owner" value="00G50000002zCxH">
-              <input type="hidden" id="notes" name='Notes__c' data-name="Notes__c" value="">
               <input name='channel-submit-button' id="channel-submit-button" class="btn-basic" type="submit" value="Get Started">
             </form>		
 	</div>
