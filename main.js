@@ -20,7 +20,6 @@ jQuery(document).ready(function($) {
 	$('#channel-form').validate();
 	$('#channel-submit-button').click( function(event) {
 		event.preventDefault();
-
 		if ( $('#channel-form').valid() ) {
 			MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2583, function(form){
 				var x = $('input, select, textarea');
@@ -36,10 +35,12 @@ jQuery(document).ready(function($) {
 					notes[notesNameArray[b]] = y[notesNameArray[b]];
 				}
 				y['Notes__c'] = "Other Notes From Form:\nAffiliated with Tablet POS: " + notes['affiliated_with_tablet_pos'] + "\nOther POS Companies: " + notes['other_pos_companies'] + "\nProducts Sold: " + notes['products'] + "\nFirst Level Support: " + notes['first_level_support'] + " " + y['number_of_agents'] + " agents";
-				form.vals(y);
-				// form.submit();
-				console.log(form.vals());
-				console.log(y);
+				form.setValues(y);
+				form.submit();
+				form.onSuccess(function(values, followUpUrl) {
+					location.href = "https://revelsystems.com/channel-sales-thank-you/";
+					return false; 
+				});
 			});
 		}
 	});
