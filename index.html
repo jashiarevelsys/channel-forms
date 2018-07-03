@@ -12,10 +12,10 @@
        <div class="dark-transparency"></div>
        <form id="channel-form" class="channel-form" method="post" autocomplete="" validate>
               <p class="form-title">Please complete <strong>all</strong> fields</p>
-              <input type="text" id="Company" name="Company" placeholder="Company Name*" required="">
-              <input type="text" id="Website" name="Website" placeholder="Company Website*" required="">
               <input type="text" id="FirstName" name="FirstName" placeholder="First Name*" required="">
               <input type="text" id="LastName" name="LastName" placeholder="Last Name*" required="">
+              <input type="text" id="Company" name="Company" placeholder="Company Name*" required="">
+              <input type="text" id="Website" name="Website" placeholder="Company Website*" required="">
               <input type="text" id="Email" name="Email" placeholder="Email*" required="">
               <input type="text" id="Phone" name="Phone" placeholder="Phone #*" required="">
               <input type="text" id="City" name="City" placeholder="City*" required="">
@@ -34,7 +34,6 @@
               </select>
               <input type="text" id="other_pos_companies" name="other_pos_companies" placeholder="List Other POS Partnerships (Past or Present)*" required="">
               <textarea rows="6" type="text" id="products" name="products" placeholder="Please list any other products or services you sell:*" required=""></textarea>
-              <input type="text" id="first_level_support" name="first_level_support" placeholder="Do you provide first level technical support to the clients you service?*" required="">
               <label for="first_level_support">Do you provide first level technical support to the clients you service?*</label>
               <select name="first_level_support" id="first_level_support">
               	<option value="Select One" default required>Select One</option>
@@ -43,24 +42,27 @@
               </select>
               <input type="number" name="number_of_agents" id="number_of_agents" placeholder="# of Support Agents*" style="display: none;" >
               <input type="hidden" name="encoding" value="UTF-8">
-              <input type="hidden" name="recordType" value="01250000000J6I1">
-              <input type="hidden" name="lead_source" value="Reseller">
+              <input type="hidden" name="RecordTypeId" value="01250000000J6I1">
+              <input type="hidden" name="Lead_Source_Type__c" value="Reseller">
               <input type="hidden" name="Origination__c" value="Inbound">
               <input type="hidden" name="Lead_Gen_Hand_Off_Date__c" value="Website">
               <input type="hidden" name="Vertical__c" value="Other">
-              <input type="hidden" name="Contact__c" value="NULL">
+              <!-- <input type="hidden" name="Contact__c" value="NULL"> -->
               <input type="hidden" name="Business_Segment__c" value="SMB">
               <input type="hidden" name="Payment_Processor__c" value="Intuit">
-              <input type="hidden" name="Status" value="New">
-              <input type="hidden" name="owner" value="00G50000002zCxH">
+              <!-- <input type="hidden" name="Status" value="New"> -->
+              <!-- <input type="hidden" name="OwnerId" value="00G50000002zCxH"> -->
               <input name='channel-submit-button' id="channel-submit-button" class="btn-basic" type="submit" value="Get Started">
             </form>		
 	</div>
+       <!-- <form id="mktoForm_2583"></form> -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://static.revelsystems.com/wp-content/themes/reveldown/-/js/vendor/jquery.validate.js"></script>
 	<script src="/js/main-min.js"></script>
 	<script src="//app-sj14.marketo.com/js/forms2/js/forms2.min.js"></script>
-       <!-- <form id="mktoForm_2583"></form> -->
+       <script type="text/javascript">
+              MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2583)
+       </script>
 
 <script>
 </script>

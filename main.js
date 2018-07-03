@@ -23,22 +23,23 @@ jQuery(document).ready(function($) {
 
 		if ( $('#channel-form').valid() ) {
 			MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2583, function(form){
-				var x = $('input, select');
-				var	y = {};
-				var notesValues,
-				notesNameArray = ['affiliated_with_tablet_pos', 'other_pos_companies', 'products', 'first_level_support'];
-				notesValues = {};
+				var x = $('input, select, textarea');
+				var	y = {},
+					notes = {},
+					notesNameArray = ['affiliated_with_tablet_pos', 'other_pos_companies', 'products', 'first_level_support'];
 				for ( var i = x.length - 1; i >= 0; i-- ) {
 					if (x[i].name !== 'channel-submit-button'){
 						y[x[i].name] = x[i].value; 
                     }
 				}
 				for ( var b = 0; b < notesNameArray.length; b++ ) {
-					notesValues.notesNameArray[b] = y[notesNameArray[b]];
+					notes[notesNameArray[b]] = y[notesNameArray[b]];
 				}
-				//form.vals(y);
+				y['Notes__c'] = "Other Notes From Form:\nAffiliated with Tablet POS: " + notes['affiliated_with_tablet_pos'] + "\nOther POS Companies: " + notes['other_pos_companies'] + "\nProducts Sold: " + notes['products'] + "\nFirst Level Support: " + notes['first_level_support'] + " " + y['number_of_agents'] + " agents";
+				form.vals(y);
 				// form.submit();
-				console.log(notesValues);
+				console.log(form.vals());
+				console.log(y);
 			});
 		}
 	});
